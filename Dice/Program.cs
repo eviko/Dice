@@ -14,10 +14,7 @@ namespace Backgammon1
             int Min = 1;
             int Max = 7;
             Console.WriteLine("Press a key ");
-
             string UsersPressKey = Console.ReadLine().ToUpper();
-
-
             while (UsersPressKey != Char.ToUpper('q').ToString())
             {
                 if (UsersPressKey == Char.ToUpper('o').ToString())
@@ -30,8 +27,6 @@ namespace Backgammon1
                 string number2 = Dice2.Output(Min, Max);
                 Console.WriteLine(number1 + " " + number2);
                 UsersPressKey = Console.ReadLine().ToUpper();
-
-
             }
         }
     }

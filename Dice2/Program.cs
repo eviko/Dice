@@ -34,21 +34,15 @@ namespace Backgammon4
                 ReportErrorToUser("One of the numbers is too big", e);
                 return;
             }
-
             if (Min >= Max || AmountOfDices <= 0)
             {
                 ReportErrorToUser("One of the inputs where not numbers", null);
                 return;
             }
-
-
-
             Console.WriteLine("Press a key ");
-
             string UsersPressKey = Console.ReadLine().ToUpper();
             ArrayList ListOfDices = new ArrayList();
             int count = 0;
-
             while (UsersPressKey != Char.ToUpper('q').ToString())
             {
                 ListOfDices.Clear();
@@ -57,22 +51,15 @@ namespace Backgammon4
                     Min = 4;
                     count++;
                 }
-
                 for (int i = 0; i < AmountOfDices; i++)
-                {
                     ListOfDices.Add(new Dice());
-                }
-
                 foreach (Dice d in ListOfDices)
                 {
                     string number = d.Output(Min, Max);
                     Console.WriteLine(number + " ");
-
                 }
                 UsersPressKey = Console.ReadLine().ToUpper();
-
             }
-
         }
 
         static int GetNumberFromUser(string message)
@@ -85,7 +72,6 @@ namespace Backgammon4
         {
             if (e != null)
                 Debug.WriteLine(e.Message);
-
             Console.WriteLine(message);
             Console.ReadKey();
         }

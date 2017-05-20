@@ -41,13 +41,9 @@ namespace Backgammon5
                 return;
             }
 
-
-
             Console.WriteLine("Press a key ");
-
             string UsersPressKey = Console.ReadLine().ToUpper();
             ArrayList ListOfDices = new ArrayList();
-
             int count = 0;
             int[] CountOfNumbers = new int[Max];
 
@@ -61,9 +57,7 @@ namespace Backgammon5
                 }
 
                 for (int i = 0; i < AmountOfDices; i++)
-                {
                     ListOfDices.Add(new Dice());
-                }
 
                 foreach (Dice d in ListOfDices)
                 {
@@ -71,18 +65,12 @@ namespace Backgammon5
                     Console.WriteLine(number + " ");
                     int Index = Convert.ToInt32(number);
                     CountOfNumbers[Index - 1]++;
-
-
                 }
                 UsersPressKey = Console.ReadLine().ToUpper();
-
-
             }
 
             for (int i = 0; i < CountOfNumbers.Length; i++)
-            {
                 Console.WriteLine("The number " + (i + 1) + " has been appeared " + CountOfNumbers[i] + " times");
-            }
 
             Console.WriteLine("You have cheated " + count + " times");
             Console.ReadKey();
@@ -98,7 +86,6 @@ namespace Backgammon5
         {
             if (e != null)
                 Debug.WriteLine(e.Message);
-
             Console.WriteLine(message);
             Console.ReadKey();
         }

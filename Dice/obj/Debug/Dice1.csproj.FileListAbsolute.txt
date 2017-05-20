@@ -1,0 +1,6 @@
+C:\Coding\Dice\Dice\bin\Debug\Dice.exe.config
+C:\Coding\Dice\Dice\bin\Debug\Dice.exe
+C:\Coding\Dice\Dice\bin\Debug\Dice.pdb
+C:\Coding\Dice\Dice\obj\Debug\Dice1.csprojResolveAssemblyReference.cache
+C:\Coding\Dice\Dice\obj\Debug\Dice.exe
+C:\Coding\Dice\Dice\obj\Debug\Dice.pdb

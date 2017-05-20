@@ -9,7 +9,6 @@ namespace Backgammon5
     class Dice
     {
         private Random r { get; set; }
-
         public Dice()
         {
             r = new Random();
@@ -17,9 +16,7 @@ namespace Backgammon5
 
         public string Output(int Min, int Max)
         {
-
             return r.Next(Min, Max).ToString();
         }
-
     }
 }
